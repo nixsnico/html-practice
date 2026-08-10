@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<link rel="stylesheet" href="style.css">
+
+<h1>
+    <div id="uhr">
+        <script>
+                var Uhrzeit = document.getElementById("uhr")
+                var rn = new Date()
+                var hours = rn.getHours()
+                var gruss ;
+
+                if (hours < 12){
+                    gruss = "Guten Morgen";
+                } else {
+                    gruss = "Willkommen";
+                }
+                Uhrzeit.innerHTML = gruss;
+        </script>
+    </div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Woolworth_Logo_2020.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original" 
+    alt="Woolworth_Logo_2020" style="float:right; width:300px; height:60px;">
+
+</h1>
+
+</head>
+<style>
+label{display: block;}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+</style>
+<body>
+    <input type="text" placeholder="Ihr Name" style="width:200px; height: 25px;" id="name">
+    <button onclick="callalert()">
+    Willkommen
+    </button>
+</body>
+<script>
+
+    function callalert(){
+    var x = document.getElementById("name")
+    alert("Willkommen " + x.value)
+    }
+
+</script>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  
+<link rel="stylesheet" href="style.css">
+
+<title>Meine HTML-Seite</title>
+
+</head>
+
+
+<body> 
+
+<h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Woolworth_Logo_2020.svg/3840px-Woolworth_Logo_2020.svg.png" style="float:right; width: 250px;height: 30px;">
+
+    <div id="uhr">
+        <script>
+            var uhrzeit = document.getElementById("uhr");
+            var jetzt = new Date();
+            var stunden = jetzt.getHours();
+
+            var gruss ;
+
+            if(stunden < 12){
+                var gruss = "Guten Morgen, bitte geben Sie Ihren Namen an:";
+            }else{
+                var gruss = "Willkommen, bitte geben Sie ihren Namen an:";
+            }
+            uhrzeit.innerHTML = gruss;
+        </script>
+    </div>
+</h1>
+
+<table1 style="float:right">
+    <tr>
+        <td>
+            <a href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEX///8AAADv7+/U1NTY2NgsLCz39/d+fn5BQUFoaGgJCQnp6emNjY28vLxZWVni4uKysrKmpqbJyck7OzusrKyTk5MYGBgyMjJKSkocHBwTExMiIiJQUFBtbW1zc3Oenp52P1nhAAAFjklEQVR4nM1c6YKiMAyu3ChYYcQB1Jn3f8sVj2lSWyg93Hy/dnQtIUlzNQ1jLoh43B6rvCzSYdxsxiEtyrw6tjGPnJZ1IKiuyku6USK9lFX9acJ4naupwchr/imKds3+24SkCd/7ZheeIt70pgS90Ddh+RVfjXmE+HWNQ1EUHQobih4oDiH0PmscSLqT1WS+STpqNv8apEevZLVLXNqOp2E4jdslbrXeSErKmbff51VzqNs44TyJ2/rQVLnOpE4oEy8kZd2ooaeoah4pJJJFvK4KDWVj50GGsVpyfbfkRqK6U5u0wtU+ZJ1CTbZ9x41eN+Ndr/q9G7O4SpuqVdraVoolSgcb374v93VcbQSj49f7OtbbsHsnqbZifFa/k9VZkZT9yOsUtdVCd9Rv++XH4v2yi7yKm5vIGnm9y+r1EvnNcmeHGsmBYbHSkO4kJTg7SE6gPksquioAjCVznPsgaYLErHSFHd1JNHlh0wO1RJUxrxIsu73XKHu3xxI01KsM6/iP55AxwqamMHNY2Bb8+iVpwi96gJFlwC9y8E8TYwcsiuUfIN9y8qjiEO0JPmXR42Af7C96dXkMR3wKRpPMq9lIJkPxUyDZPamCTyrnlB0pVBAdF0DaPqNWMYxdA9gCDGgZtlp/g6ymwUZ1BTQ+WhsKhbf/QMkrgh5HI8AE5ncfqCrd/CB44Kh2gnDnBd14AjBmKFX/Ae5Rb/HTEmB8pbCKUMvPn6KJMRC5KXT9+HnhTYACPMpfZoDklcLbcbMkXg0gwFReBiZAq6zBLr9lA6W9l4zAgxvpq0L71TySJ4ftfRJgR4HZARyRWXz6BH8lTal1yQLuMPxq4Is1Wg7srb2rBLpewM9j8fnXiuU42B1K22cGkDxBv3y1YlQCdNTFgQNWXcWnXJwjfJlrFEenD29GxhyZYNW3UM3GZm3Ep03vElUAwy22PiiYGq+N+bRxqkQDW9W/PgMRRGW6DubT4FgdB3XRV8wkpLc1tcwSn1yL0K2Iw1/yEwFgP/tTAYlP7gdnQoH2jw/AWxtWRxO/fGIwEn/uP2AmzHwFylg3Jx8HjGDJh6EUwUNvZKT88+lmqoT8HoGTWN9IephPo6eDWJBJTX8CI2HiYkLwiSEditCfqYHlxHzSJ7ZrEQnfPrFGGK5i8aeh+MRg8DQZcJHuLcfmmE8+aQK8uQVBkShxLqpUgkrZ/mQ3QWjRJYKB2pKV4vjc1m8DhBDCLbIWQeeSnifoEMOXLXgBaHoMsvX9vOnkQ0A+oUp5C/KYeT3HfPLiWzCEYzkArZ+NpTg+gArQUAMJEQTOJaExKuaeQzT5iKguB4nMTJLL8bFWnUVWmFVaoUdXYEn1ZiqWejg0LR3LOM204AhDVYgCkT4U5h46gl7Qp4ciJE7Z30bXGp5sdcPbHLTpvRDHwP7+edJlJIl6dUt86wSY/O2lUYR4g87LvPdMOEH3GGCcaRK1LL5YubYtjMRHUtFJmoSPGs/B0HiauRnsjoO7GUOHjJgT3CGTDF2MgzwUeAYO8kiGw7aJg98ES0ocSKZYJJNRkmn7ygJHGooqXOAgWQpaWzQLwyupaOZWXvTFK6m8SLMQS7JkbVHc965Xb8V9kscgNA+M3I/Wzv6P1uwOIbFeeT+EpHlca3mwjXjl/WCbZAsAzWYJkm0lNBtw7FuVzqrl1kDfqkSyqYtm+xvJRsH/1VIJElzVDqPYfEqzTZdmQzPJ1m+aTfIkrxPQvHhB84oKycs8NK890bwgRvMqHc1LhySvZ9K8yErzyi/Ny9E0r5HTvHBPczQBzSEOjOS4C0ZzMAjNESo0h80wkmN5GM0BRmxh1NPlv4x6mkBwKBajOT6MkRy0NoHgSLo76A3vu4PgmMM76A2EfIDe6MwnyA0Z/SMszDjWfxVrU+PyFFgaAAAAAElFTkSuQmCC"
+                 style="width: 30px; height:30px;">
+            </a>
+        </td>
+    </tr>
+</table1>
+
+</body>
+
+<input type="text" id="Name">
+<button onclick="ausgabe()">Willkommen</button>
+
+<script>
+    function ausgabe(){
+        var eingabeFeld = document.getElementById("Name");  
+        var namenAusgabe = eingabeFeld.value;
+        
+        if(eingabeFeld.value!=""){
+            alert("Willkommen " + namenAusgabe + "!");
+        }else{
+            alert("Name fehlt!");
+        }
+    }
+
+</script>
+
+</html>

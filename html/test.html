@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+
+<input type="text" id="name">
+<button onclick="ausgabe()";>Willkommen</button>
+
+<script>
+    function ausgabe(){
+
+        var a = document.getElementById("name");
+        var b = a.value;
+
+        alert("das ist der name: " + b + "!");
+    }
+</script>
+
+<br><br><br>
+
+<input type="text" id="name1">
+<button onclick="ausgabe1()";>Test</button>
+
+<script>
+    function ausgabe1(){
+        var c = document.getElementById("name1");
+        var d = c.value;
+
+        if(c.value!=""){
+            alert("das ist der name: " + d + "!");
+        }else{
+            alert("Name fehlt!");
+        }
+    }
+</script>
+
+</body>
+</html>
+
+

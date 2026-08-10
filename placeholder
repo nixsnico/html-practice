@@ -1,0 +1,30 @@
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Bemerkung</td>
+            <td>Internet</td>
+        </tr>
+
+        <tr>
+            <td>Google</td>
+            <td>Eine Suchmaschine</td>
+            <td><a href="https://www.google.com">Google</a></td>
+        </tr>
+
+
+        <tr>
+            <td>Wikipedia</td>
+            <td>Online Enzyklopädie</td>
+            <td><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Wikipedia</a></td>
+        </tr>
+    </table>
+
+
+
+    input[type=text], select{
+    width: 25%;
+    padding: 12px;
+    border: 1px;
+    border-radius: 4px;
+    display: block;
+}
